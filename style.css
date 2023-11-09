@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+span{
+    content: ".";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 15px; 
+}
+
+#main{
+    min-height: 100vmin;
+    max-width: 98.7vw;
+    width: 100vw;
+    position: relative;
+}
+#nav{
+    min-height: 5vmax;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh;
+    opacity: 0;
+    transform: translateY(-4vh);
+}
+
+.left{
+    margin-left: 2vw;
+    overflow: hidden;
+}
+
+.center{
+    margin-left: 10vw;
+}
+.center a{
+    text-decoration: none;
+    color: black;
+    margin-right: 3.2vw;
+    font-size: 1.2vw;
+    letter-spacing: -1px;
+}
+
+#hero{
+    position: relative;
+    min-height: 100vmin;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.hero1 h1{
+    position: absolute;
+    left: 3%;
+    top: 32vh;
+    font-size: 17vw;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -1px;
+    bottom: 8%;
+    opacity: 0; 
+}
+
+
+.hero2 p{
+    position: absolute;
+    font-size: 1.2vw;
+    letter-spacing: 0.2px;
+    right: 5%;
+    bottom: 8%;
+    width: 17%;
+    opacity: 0;
+}
+
+#about{
+    min-height: 70vmin;
+    width: 100%;
+    position: relative;
+    margin-top: 10vh;
+}
+
+.about1 h1{
+    position: absolute;
+    font-weight: 400;
+    width: 65%;
+    padding: 3vw;
+    font-size: 2.1vw;
+}
+
+.about2{
+    position: absolute;
+    top: 7%;
+    width: 20%;
+    right: 0%;
+}
+
+.about2 h3{
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: gray;
+}
+
+.about2 a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    font-size: 1.2vw;
+}
+
+.btn{
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    font-size: 1.2vw;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1.3vh;
+    border-radius: 100px;
+    width: 15%;
+}
+
+.btn:hover{
+    color:black;
+    background-color: white;
+    transform: scale(1.05);
+    border: 1px solid black;
+}
+
+.btn:hover span {
+    background-color: black;
+}
+
+#help{
+    width: 100%;
+    min-height: 80vmin;
+    position: relative;
+}
+
+#help h1{
+    font-size: 4.3vw;
+    font-weight: 400;
+    letter-spacing: -5px;
+    margin-left: 3vw;
+}
+
+.help-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5vh 3vw;
+}
+
+.help1{
+    min-height: 37vmin;
+    border-left: 2px solid rgb(230, 228, 228);
+    padding: 3vh;
+}
+
+.help1 p{
+    color: rgb(230, 228, 228);
+    font-size: 4vw;
+}
+
+.help1 h3{
+    margin-top: 6vh;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.help1 h2{
+    font-size: 1.2vw;
+    font-weight: 300;
+    width: 90%;
+}
+
+#projects{
+    width: 100%;
+    min-height: 100vmin;
+    position: relative;
+}
+
+span1{
+    font-size: 1.5vw;
+    color: gray;
+}
+
+.projects-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+}
+
+.projects-heading h1{
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+.projects-heading h2{
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+.projects-container{
+    padding: 5vw 3vw;
+}
+
+.project1{
+    display: flex;
+    margin-bottom: 7vmin;
+    position: relative;
+}
+
+.project1 img{
+    width: 56vw;
+    margin-right: 3vw;
+    filter: blur(2px);
+}
+
+.project1 h1{
+    font-weight: 400;
+    font-size: 2.2  vw;
+}
+
+.project1 i{
+    font-size: 5.5vw;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    opacity: 0.6;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+}
+
+.project1 i:hover{
+    opacity: 0.4;
+}
+
+.project1 img:hover {
+    filter: blur(7px);
+}
+
+
+#more{
+    width: 100%;
+    height: 20vmin;
+    position: relative;
+    padding: 0vh 3vw;
+}
+
+#more h1{
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+#more a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: black;
+}
+
+#skillset{
+    width: 100%;
+    height: 100vmin;
+}
+
+#skillset h3{
+    font-weight: 400;
+    font-size: 5vw;
+    margin-left: 3vw;
+    margin-bottom: 6vh;
+}
+
+#skillset h1{
+    font-weight: 400;
+}
+
+#skillset{
+    color: black;
+    padding-right: 10vw;
+    padding-top: 120px;
+    width: 100%;
+    height: 140vh;
+}
+
+.elem{
+    display: flex;align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 0;
+    border-bottom:1px solid #888;
+    position: relative;
+    margin-left: 3vw;
+}
+
+.elem h1{
+    text-transform: uppercase;
+    margin: 2vh 0vh;
+    font-size: 3.5vw;
+    opacity: 0.6;
+}
+.elemlast{
+    border-top: 1px solid #888;
+}
+
+.elem img{
+    opacity: 0;
+    pointer-events: none;
+    height: 150%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#contact{
+    width: 100%;
+    height: 50vmin;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#contact img{
+    width: 90px;
+    height: 90px;
+}
+
+#contact h1{
+    padding-left: 2vw;
+    font-size: 5vw;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1px;
+    width: 65%;
+}
+
+#btn2{
+    border: none;
+    padding: 1vw;
+    font-size: 1.2vw;
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+    margin-top: 10rem;
+    margin-right: 3vw;
+}
+
+#btn2:hover{
+    color:black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.btn2:hover span {
+    background-color: black;
+}
+
+.right a{
+    text-decoration: none;
+
+}
+
+@media(max-width:440px) {
+    
+    #hero{
+        min-height: 100vmin;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100px;
+    }
+    
+    .hero1 h1{
+        left: 5%;
+        top: 20vmax;
+        font-size: 19vw;
+        line-height: 1;
+        font-weight: 400;
+        letter-spacing: -1px;
+        bottom: 8%;
+        opacity: 0; 
+    }
+    
+    
+    .hero2 p{
+        font-size: 4.2vw;
+        letter-spacing: 0.2px;
+        left: 5%;
+        width: 75%;
+        opacity: 0;
+        bottom: 0%;
+
+    }
+
+    #about{
+        min-height: 70vmin;
+        width: 100%;
+        position: relative;
+        margin-top: 5vh;
+    }
+    
+    .about1 h1{
+        position: absolute;
+        font-weight: 400;
+        width: 100%;
+        padding: 4vw;
+        font-size: 4.5vw;
+    }
+    
+    .about2{
+        display: none;
+    }
+
+    
+    .btn{
+        position: absolute;
+        top: 60%;
+        left: 3%;
+        font-size: 3.5vw;
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 1.3vh;
+        border-radius: 100px;
+        width: 45%;
+    }
+    
+    #help{
+        width: 100%;
+        min-height: 80vmin;
+        position: relative;
+    }
+    
+    #help h1{
+        font-size: 8.3vw;
+        font-weight: 400;
+        margin-left: 5vw;
+        letter-spacing: 0.5px;
+    }
+    
+    .help-content{
+        display: flex;
+        flex-direction: column;
+        margin: 5vh 3vw;
+    }
+    
+    .help1{
+        min-height: 37vmin;
+        border-left: 2px solid rgb(230, 228, 228);
+        padding: 3vh;
+    }
+    
+    .help1 p{
+        color: rgb(230, 228, 228);
+        font-size: 10vw;
+    }
+    
+    .help1 h3{
+        margin-top: 3vh;
+        font-size: 5vw;
+        font-weight: 400;
+    }
+    
+    .help1 h2{
+        font-size: 3.2vw;
+        font-weight: 300;
+        width: 100%;
+    }
+    #projects{
+        width: 100%;
+        min-height: 100vmin;
+        position: relative;
+    }
+    
+    span1{
+        font-size: 1.8vw;
+        color: gray;
+    }
+    
+    .projects-heading{
+        display: flex;
+        justify-content: space-around;
+        padding: 0vw 5vw;
+    }
+    
+    .projects-heading h1{
+        font-weight: 400;
+        font-size: 5vw;
+        width: 100%;
+    }
+    
+    .projects-heading h2{
+        font-weight: 400;
+        font-size: 2.2vw;
+        width: 100%;
+
+    }
+    
+    .projects-container{
+        padding: 5vw 3vw;
+    }
+    
+    .project1{
+        margin-bottom: 10vmin;
+    }
+    
+    .project1 img{
+        width: 56vw;
+        margin-right: 1vw;
+        filter: blur(2px);
+    }
+    
+    .project1 h1{
+        font-weight: 400;
+        font-size: 3.2vw;
+    }
+    
+    .project1 i{
+        font-size: 5.5vw;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        opacity: 0.6;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        color: black;
+        background-color: white;
+    }
+    
+    .project1 i:hover{
+        opacity: 0.4;
+    }
+    
+    .project1 img:hover {
+        filter: blur(7px);
+    }
+
+    #more a{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 3.5vw;
+        color: black;
+    }    
+    #more h1{
+        font-weight: 500;
+        font-size: 4.5vw;
+        margin-bottom: 5vh;
+    }
+
+    #more p{
+        font-size: 3vw;
+    }
+
+    #skillset{
+        color: black;
+        padding-right: 10vw;
+        width: 100%;
+        height: 140vmin;
+    }
+    
+    #skillset h3{
+        font-weight: 400;
+        font-size: 7vw;
+        margin-left: 7  vw;
+        margin-bottom: 3vh;
+    }
+
+    span1{
+        font-size: 3vw;
+    }
+    
+    #skillset h1{
+        font-weight: 400;
+    }
+    
+    #contact{
+        width: 100%;
+        height: 30vmin;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    #contact img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #contact h1{
+        padding-left: 3vw;
+        font-size: 5vw;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -1px;
+        width: 90%;
+    }
+    
+    #btn2{
+        position: absolute;
+        bottom: 0%;
+        left: 10%;
+        font-size: 3.5vw;
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 1vh;
+        border-radius: 100px;
+        width: 45%;
+    }
+    
+    #nav{
+        min-height: 5vmax;
+        padding: 3vh;
+        opacity: 0;
+    }
+    
+    .left{
+        margin-left: 1vw;
+        overflow: hidden;
+        font-size: 2vw;
+        margin-top: 1vh;
+    }
+    
+    .center{
+        margin-left: 1vw;
+    }
+
+    .right{
+        font-size: 3vw;
+        margin-top: 1vh;
+    }
+
+    #center{
+        display: none;
+    }
+    .center a{
+        text-decoration: none;
+        color: black;
+        margin-right: 1.2vw;
+        font-size: 2.6vw;
+        letter-spacing: -1px;
+    }
+}
